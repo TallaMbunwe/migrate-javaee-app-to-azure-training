@@ -45,6 +45,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.release>8</maven.compiler.release>
   </properties>
 
   <dependencyManagement>
@@ -257,8 +258,10 @@
         <configuration>
           <schemaVersion>v2</schemaVersion>
           <subscriptionId>${SUBSCRIPTION}</subscriptionId>
-          <resourceGroup>${RESOURCE_GROUP}</resourceGroup>
-          <appName>${WEBAPP}</appName>
+          <!--<resourceGroup>${RESOURCE_GROUP}</resourceGroup>-->
+          <resourceGroup>NetworkWatcherRG</resourceGroup>
+          <!--<appName>${WEBAPP}</appName>-->
+          <appName>etmwebapp</appName>
           <pricingTier>P1v3</pricingTier>
           <region>${REGION}</region>
           <runtime>
