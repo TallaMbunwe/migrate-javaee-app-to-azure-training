@@ -52,10 +52,10 @@ public final class ViewUtils
                   // Find a matching getter and invoke it to display the key
                   for (Method method : object.getClass().getDeclaredMethods())
                   {
-                     if (method.equals(new PropertyDescriptor(field.getName(), object.getClass()).getReadMethod()))
-                     {
-                        return method.invoke(object).toString();
-                     }
+                     //if (method.equals(new PropertyDescriptor(field.getName(), object.getClass()).getReadMethod()))
+                     //{
+                     //   return method.invoke(object).toString();
+                     //}
                   }
                }
             }
