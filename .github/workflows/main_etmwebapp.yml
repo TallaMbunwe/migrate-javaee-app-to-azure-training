@@ -19,13 +19,10 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v1
         with:
-          java-version: '1.8'
+          java-version: '17'
 
       - name: Build with Maven
-        run: |
-          # mvn clean install
-          mvn package -Dmaven.test.skip=true -Ddb=h2
-          # mvn clean install
+        run: mvn clean install
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -52,5 +49,5 @@ jobs:
         with:
           app-name: 'etmwebapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_98A72F8C897C41B790D30BD6C7BBD2BF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_239935AFC5AF4D06B6A4D76B679D88FB }}
           package: '*.war'
