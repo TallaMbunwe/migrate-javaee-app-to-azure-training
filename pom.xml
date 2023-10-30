@@ -45,10 +45,10 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!--<maven.compiler.source>1.8</maven.compiler.source>-->
-    <maven.compiler.source>1.8</maven.compiler.source>       
+    <maven.compiler.source>20</maven.compiler.source>       
     <!--<maven.compiler.target>1.8</maven.compiler.target>-->
-    <maven.compiler.target>1.8</maven.compiler.target>       
-    <maven.compiler.release>8</maven.compiler.release>
+    <maven.compiler.target>20</maven.compiler.target>       
+    <maven.compiler.release>20</maven.compiler.release>
   </properties>
 
   <dependencyManagement>
